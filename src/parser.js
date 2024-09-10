@@ -1,0 +1,1 @@
+const parse = (json) => JSON.parse(json)
