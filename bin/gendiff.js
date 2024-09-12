@@ -2,9 +2,9 @@
 
 import { program } from 'commander';
 
-import parse from '../src/parse.js';
+import gendiff from '../src/parser.js';
 
-parse();
+gendiff('__fixtures__/file1.json', '__fixtures__/file2.json')
 
 program
     .description('Compares two configuration files and shows a difference.')

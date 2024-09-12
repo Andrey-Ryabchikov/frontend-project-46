@@ -1,7 +1,6 @@
 {
   "name": "@hexlet/code",
   "version": "1.0.0",
-  "type": "module",
   "description": "[![Actions Status](https://github.com/Andrey-Ryabchikov/frontend-project-46/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/Andrey-Ryabchikov/frontend-project-46/actions)",
   "main": "index.js",
   "scripts": {
@@ -13,6 +12,7 @@
   },
   "author": "Andrey Ryabchikov",
   "license": "ISC",
+  "type": "module",
   "bin": {
     "gendiff": "bin/gendiff.js"
   },
@@ -22,5 +22,8 @@
   "homepage": "https://github.com/Andrey-Ryabchikov/frontend-project-46#readme",
   "dependencies": {
     "commander": "^12.1.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
   }
 }
