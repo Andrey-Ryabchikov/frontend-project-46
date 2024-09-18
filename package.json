@@ -14,7 +14,8 @@
   "license": "ISC",
   "type": "module",
   "bin": {
-    "gendiff": "bin/gendiff.js"
+    "gendiff": "bin/gendiff.js",
+    "test2": "src/index.js"
   },
   "bugs": {
     "url": "https://github.com/Andrey-Ryabchikov/frontend-project-46/issues"
