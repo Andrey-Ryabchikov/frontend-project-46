@@ -4,16 +4,14 @@ import { program } from 'commander';
 
 import gendiff from "../src/index.js";
 
-
-
 program
     .description('Compares two configuration files and shows a difference.')
     .version('1.0.0')
-    .argument('<filepath1> <filepath2>')
+    .arguments('<filepath1> <filepath2>')
     .option('-f, --format [type]', 'output format')
     .action((filepath1, filepath2, options) => {
-        console.log(gendiff(filepath1, filepath2, options.format));
-      });
+      console.log(gendiff(filepath1, filepath2, options.format));
+    });
 
 
 program.helpOption('-h, --help', 'output usage information');
