@@ -12,9 +12,5 @@ program
     .action((filepath1, filepath2, options) => {
       console.log(gendiff(filepath1, filepath2, options.format));
     });
-
-
-program.helpOption('-h, --help', 'output usage information');
-
-program.parse(process.argv);
-
+  
+  program.parse();
