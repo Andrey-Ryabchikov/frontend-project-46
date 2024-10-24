@@ -21,4 +21,4 @@ make install
 ```
 
 
-[![asciicast](https://asciinema.org/a/XhDD0MlMxuz0hGRZQ3Ue4TCmp.svg)](https://asciinema.org/a/XhDD0MlMxuz0hGRZQ3Ue4TCmp)
+[![asciicast](https://asciinema.org/a/Pd8yrTyg6Y3Agl28w4o25dNas.svg)](https://asciinema.org/a/Pd8yrTyg6Y3Agl28w4o25dNas)
