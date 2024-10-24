@@ -18,5 +18,7 @@ git clone git@github.com:Andrey-Ryabchikov/frontend-project-46.git
 cd frontend-project-46/
 make install
 
+```
+
 
 [![asciicast](https://asciinema.org/a/XhDD0MlMxuz0hGRZQ3Ue4TCmp.svg)](https://asciinema.org/a/XhDD0MlMxuz0hGRZQ3Ue4TCmp)
