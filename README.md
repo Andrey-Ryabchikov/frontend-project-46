@@ -3,6 +3,8 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/4565a3c0f8f11f586532/maintainability)](https://codeclimate.com/github/Andrey-Ryabchikov/frontend-project-46/maintainability)
 
+[![Test Coverage](https://api.codeclimate.com/v1/badges/4565a3c0f8f11f586532/test_coverage)](https://codeclimate.com/github/Andrey-Ryabchikov/frontend-project-46/test_coverage)
+
 
 # Проект "Вычислитель отличий"
 
