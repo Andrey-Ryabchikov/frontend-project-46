@@ -4,14 +4,14 @@ const compareObjects = (obj1, obj2) => {
 
   keys.forEach((key) => {
     if (!Object.hasOwn(obj1, key)) {
-      result[`+ ${key}: ${obj2[key]}`] = null; // Добавлено в obj2
+      result[`+ ${key}: ${obj2[key]}`] = null; 
     } else if (!Object.hasOwn(obj2, key)) {
-      result[`- ${key}: ${obj1[key]}`] = null; // Удалено из obj1
+      result[`- ${key}: ${obj1[key]}`] = null; 
     } else if (obj1[key] !== obj2[key]) {
-      result[`- ${key}: ${obj1[key]}`] = null; // Изменилось в obj1
-      result[`+ ${key}: ${obj2[key]}`] = null; // Изменилось в obj2
+      result[`- ${key}: ${obj1[key]}`] = null; 
+      result[`+ ${key}: ${obj2[key]}`] = null; 
     } else {
-      result[key] = obj1[key]; // Не изменилось
+      result[key] = obj1[key]; 
     }
   });
 

@@ -15,6 +15,7 @@
   "type": "module",
   "bin": {
     "gendiff": "bin/gendiff.js",
+    "test123": "bin/test123.js",
     "test2": "src/index.js"
   },
   "bugs": {
