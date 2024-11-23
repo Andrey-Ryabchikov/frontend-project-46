@@ -24,5 +24,10 @@ make install
 
 ```
 
+## Пример сравнения плоских файлов JSON:
 
 [![asciicast](https://asciinema.org/a/Pd8yrTyg6Y3Agl28w4o25dNas.svg)](https://asciinema.org/a/Pd8yrTyg6Y3Agl28w4o25dNas)
+
+## Пример сравнения плоских файлов yaml:
+
+[![asciicast](https://asciinema.org/a/zZrqJOEKiSVoXJmTv14bQeVnc.svg)](https://asciinema.org/a/zZrqJOEKiSVoXJmTv14bQeVnc)
