@@ -31,3 +31,7 @@ make install
 ## Пример сравнения плоских файлов yaml:
 
 [![asciicast](https://asciinema.org/a/zZrqJOEKiSVoXJmTv14bQeVnc.svg)](https://asciinema.org/a/zZrqJOEKiSVoXJmTv14bQeVnc)
+
+## Пример рекурсивного сравнения файлов
+
+[![asciicast](https://asciinema.org/a/DCd3TbQxPz5NExRyHYgZSkFDo.svg)](https://asciinema.org/a/DCd3TbQxPz5NExRyHYgZSkFDo)

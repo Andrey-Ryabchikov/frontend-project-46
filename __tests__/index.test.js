@@ -18,7 +18,7 @@ test('Comparison check default format for JSON', () => {
   const file2 = getFixturePath('file2.json');
 
   const received = gendiff(file1, file2);
-  const expected = readFile('expectedResultStylish.txt');
+  const expected = readFile('expectedResultJson.txt');
 
   expect(received).toEqual(expected);
 });
@@ -28,7 +28,7 @@ test('Comparison check default format for YAML', () => {
   const file2 = getFixturePath('file2.yaml');
 
   const received = gendiff(file1, file2);
-  const expected = readFile('expectedResultStylish.txt'); // Используйте тот же ожидаемый результат, если формат вывода не зависит от типа файла
+  const expected = readFile('expectedResultJson.txt'); // Используйте тот же ожидаемый результат, если формат вывода не зависит от типа файла
 
   expect(received).toEqual(expected);
 });
