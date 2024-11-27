@@ -9,9 +9,9 @@ program
   .version('1.0.0')
   .arguments('<filepath1> <filepath2>')
   .option('-f, --format [type]', 'output format (options: stylish, plain, json)', 'stylish')
-  .action((filepath1, filepath2, options) => {
-    console.log(gendiff(filepath1, filepath2, options.format));
+    .action((filepath1, filepath2) => {
+    console.log(gendiff(filepath1, filepath2, program.opts().format));
   });
-  
+
 
 program.parse();

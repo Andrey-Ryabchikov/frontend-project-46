@@ -34,7 +34,7 @@ const stylish = (tree) => {
       if (status === 'unchanged') return `${acc}\n${levelIndent}  ${name}: ${styleValue(oldValue, depth)}`;
       if (status === 'changed') return `${acc}\n${levelIndent}- ${name}: ${styleValue(oldValue, depth)}\n${levelIndent}+ ${name}: ${styleValue(newValue, depth)}`;
 
-      // если дети в обоих файлах были объектами, статус 'has children'
+
       return `${acc}\n${levelIndent}  ${name}: ${stringifyWithDepth(children, depth + 2)}`;
     }, '');
 

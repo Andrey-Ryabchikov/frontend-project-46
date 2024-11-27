@@ -35,3 +35,7 @@ make install
 ## Пример рекурсивного сравнения файлов
 
 [![asciicast](https://asciinema.org/a/DCd3TbQxPz5NExRyHYgZSkFDo.svg)](https://asciinema.org/a/DCd3TbQxPz5NExRyHYgZSkFDo)
+
+## Пример работы при плоском формате вывода и формате вывода json:
+
+[![asciicast](https://asciinema.org/a/Nm1gN0W9Pq5PYotmQttJpOm6z.svg)](https://asciinema.org/a/Nm1gN0W9Pq5PYotmQttJpOm6z)
