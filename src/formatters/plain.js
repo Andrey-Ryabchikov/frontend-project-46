@@ -14,7 +14,6 @@ const plain = (tree, path) => {
     if (item.status === 'changed') return [...acc, `Property '${name}' was updated. From ${stringify(item.oldValue)} to ${stringify(item.newValue)}`];
     if (item.status === 'unchanged') return acc;
 
-
     return [...acc, `${plain(item.children, `${name}`)}`];
   }, []);
 
