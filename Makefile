@@ -9,3 +9,13 @@ publish:
 
 lint:
 	npx eslint .
+
+lint-fix:
+	npx eslint --fix .
+
+tests:
+	npm test --watchAll
+	npx jest --coverage
+
+test-coverage:
+	npm test --coverage --coverageProvider=v8
