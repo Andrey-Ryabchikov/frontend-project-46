@@ -17,3 +17,6 @@ tests:
 	npm test --watchAll
 	npx jest --coverage
 
+test-coverage:
+	npm test --coverage --coverageProvider=v8
+
