@@ -29,7 +29,7 @@ test('Comparison check default format for YAML', () => {
   expect(received).toEqual(expected);
 });
 
-test('Comparison check default format for YAML', () => {
+test('Comparison check format for YAML', () => {
   const file1 = getFixturePath('file1.yaml');
   const file2 = getFixturePath('file2.yaml');
 
