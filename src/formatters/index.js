@@ -1,8 +1,4 @@
-import stylish from './stylish.js';
-import plain from './plain.js';
-import jsonFormat from './jsonFormat.js'; // Импорт новой функции форматтера
-
-const format = (data, formatter) => {
+const format = (data, formatter = 'stylish') => { // Установлено значение по умолчанию
   switch (formatter) {
     case 'stylish':
       return stylish(data);
@@ -14,5 +10,3 @@ const format = (data, formatter) => {
       throw new Error(`Unsupported format type: '${formatter}'. Supported formats are: 'stylish', 'plain', 'json'.`);
   }
 };
-
-export default format;
