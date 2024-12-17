@@ -43,8 +43,9 @@ jobs:
 
       # Run tests
       - name: Run tests
+        run: make tests
 
-       # Test coverage and upload to Code Climate
+      # Test coverage and upload to Code Climate
       - name: Test & publish code coverage
         uses: paambaati/codeclimate-action@v5.0.0
         env:
