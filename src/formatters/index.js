@@ -1,4 +1,4 @@
-const format = (data, formatter = 'stylish') => { // Установлено значение по умолчанию
+const format = (data, formatter = 'stylish') => {
   switch (formatter) {
     case 'stylish':
       return stylish(data);
@@ -10,3 +10,5 @@ const format = (data, formatter = 'stylish') => { // Установлено зн
       throw new Error(`Unsupported format type: '${formatter}'. Supported formats are: 'stylish', 'plain', 'json'.`);
   }
 };
+
+export default format;
