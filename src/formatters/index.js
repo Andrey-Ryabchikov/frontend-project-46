@@ -1,14 +1,18 @@
-import plain from './plain.js';
 import stylish from './stylish.js';
-import jsonFormat from './jsonFormat.js';
+import plain from './plain.js';
+import jsonFormat from './jsonFormat.js'; // Импорт новой функции форматтера
 
-export default (diff, formatName) => {
-  switch (formatName) {
+const format = (data, formatter) => {
+  switch (formatter) {
+    case 'stylish':
+      return stylish(data);
     case 'plain':
-      return plain(diff);
+      return plain(data);
     case 'json':
-      return jsonFormat(diff);
+      return jsonFormat(data);
     default:
-      return stylish(diff);
+      throw new Error(`Unsupported format type: '${formatter}'. Supported formats are: 'stylish', 'plain', 'json'.`);
   }
 };
+
+export default format;
