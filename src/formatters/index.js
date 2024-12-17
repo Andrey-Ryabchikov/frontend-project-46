@@ -3,6 +3,10 @@ import plain from './plain.js';
 import json from './jsonFormat.js';
 
 const format = (formatter, data) => {
+  if (typeof formatter !== 'string') {
+    throw new Error(`Formatter must be a string, but got ${typeof formatter}: ${JSON.stringify(formatter)}`);
+  }
+
   switch (formatter) {
     case 'stylish':
       return stylish(data);
