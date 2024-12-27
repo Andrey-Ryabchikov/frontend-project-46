@@ -10,11 +10,10 @@ const __dirname = dirname(__filename);
 const getFixturePath = (filename) => join(__dirname, '..', '__fixtures__', filename);
 const readFile = (filename) => readFileSync(getFixturePath(filename), 'utf-8');
 
-// Тесты с использованием test.each
 describe('Comparison checks', () => {
   test.each([
-    ['file1.json', 'file2.json', 'expectedResultStylish.txt'], // для JSON
-    ['file1.yaml', 'file2.yaml', 'expectedResultStylish.txt'], // для YAML
+    ['file1.json', 'file2.json', 'expectedResultStylish.txt'], 
+    ['file1.yaml', 'file2.yaml', 'expectedResultStylish.txt'], 
   ])('Comparison check for %s and %s with default format', (file1, file2, expectedResultFile) => {
     const received = gendiff(getFixturePath(file1), getFixturePath(file2));
     const expected = readFile(expectedResultFile);
@@ -22,7 +21,7 @@ describe('Comparison checks', () => {
   });
 
   test.each([
-    ['file1.yaml', 'file2.yaml', 'expectedResultPlain.txt'], // для plain-формата
+    ['file1.yaml', 'file2.yaml', 'expectedResultPlain.txt'], 
   ])('Gendiff plain Json for %s and %s', (file1, file2, expectedResultFile) => {
     const received = gendiff(getFixturePath(file1), getFixturePath(file2), 'plain');
     const expected = readFile(expectedResultFile);
